@@ -37,8 +37,11 @@
       </table>
     </section>
     <section class='content__multi-tables'>
-      <h3 class='content__sub-title'>Цветная таблица умножения</h3>
+      <h3 class='content__sub-title'>
+          <?php paintWord('Цветная') ?> таблица умножения
+      </h3>
       <table id="lesson_2" class='content__table'>
+          <?php outputTable(true); ?>
       </table>
     </section>
     <section class='content__form-container'>
@@ -50,5 +53,9 @@
   <footer class='footer'>
     <h6 class='footer__copy'><i class="fas fa-copyright"></i> Created by <a href="https://github.com/antonpv1992">Antonpv1992</a></h6>
   </footer>
+  <div class='scroll-top'>
+    <i class="fa fa-long-arrow-up"></i>
+    <span class='button-shadow'></span>
+  </div>
 </body>
 </html>
