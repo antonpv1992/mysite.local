@@ -74,3 +74,14 @@
         }
         echo $text;
     }
+
+    /**
+     * method for reversing the string
+     * @param string $str string for reversing
+     * @return string reversed string
+     */
+    function mb_strrev(string $str): string
+    {
+        $letters = preg_split("//u", htmlspecialchars($str), 0, PREG_SPLIT_NO_EMPTY);
+        return join("", array_reverse($letters));
+    }

@@ -47,6 +47,18 @@
     <section class='content__form-container'>
       <h3 class='content__sub-title'>Форма</h3>
       <form id="lesson_3" class='content__form form' action="/action.php" method="post">
+        <div class='form__field-wrapper'>
+          <textarea class='form__field' name="string" placeholder="Введите текст"></textarea>
+          <span class='form__shadow'></span>
+        </div>
+        <div class='form__field-wrapper'>
+          <button class='form__button' type="submit">
+            <span class='form__button-value'>Отправить
+              <i class="fa fa-long-arrow-right"></i>
+            </span>
+            <span class='button-shadow'></span>
+          </button>
+        </div>
       </form>
     </section>
   </main>
